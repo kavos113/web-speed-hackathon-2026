@@ -122,11 +122,11 @@ const config = {
     },
   },
   optimization: {
-    minimize: false,
+    minimize: true,
     splitChunks: {
       chunks: "all",
       maxInitialRequests: Infinity,
-      minSize: 2 * 1024, // 20KB
+      minSize: 200 * 1024, // 20KB
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
