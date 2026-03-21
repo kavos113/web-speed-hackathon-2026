@@ -71,7 +71,6 @@ export function initPost(sequelize: Sequelize) {
           },
           {
             association: "images",
-            separate: true,
             through: { attributes: [] },
           },
           { association: "movie" },
